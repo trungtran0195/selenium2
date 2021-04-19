@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="5" parallel="false">
+    <!--	<listeners>-->
+    <!--		<listener class-name="com.pw.utils.TestListener"></listener>-->
+    <!--	</listeners>-->
+
+    <test name="Regression">
+        <parameter name="browser" value="chrome.local"/>
+        <parameter name="autoLogBug" value="false"/>
+        <parameter name="platform" value="desktop"/>
+        <classes>
+<!--            <class name="com.logigear.tests.Log_01"/>-->
+<!--            <class name="com.logigear.tests.Log_02"/>-->
+<!--            <class name="com.logigear.tests.Reg_01"/>-->
+<!--            <class name="com.logigear.tests.Reg_02"/>-->
+            <class name="com.logigear.tests.Book_Ticket_01"/>
+        </classes>
+    </test>
+
+</suite>
+
