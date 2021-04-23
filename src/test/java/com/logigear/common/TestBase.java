@@ -21,7 +21,7 @@ public class TestBase {
         DriverProperty currentProperty = Driver.getCurrentProperty();
         currentProperty.setBrowserPath(currentProperty.getBrowserPath());
         Driver.initDriver();
-        Driver.navigate("http://www.railway.somee.com");
+        Driver.navigate(Constants.RAIL_WAY_BROWSER);
         Driver.setWaitForAjax(false);
         Driver.setTimeOut(Constants.DEFAULT_TIME);
     }

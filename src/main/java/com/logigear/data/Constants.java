@@ -8,6 +8,7 @@ import java.util.List;
 public class Constants {
 
     public static final String BROWSER_SETTING_FILE = "src/test/resources/browsers.setting.properties";
+    public static final String RAIL_WAY_BROWSER = "http://www.railway.somee.com";
 
     // Formatter
     public static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("M/dd/uuuu");
@@ -21,6 +22,11 @@ public class Constants {
     public static final int DEFAULT_TIME = 5;
     public static final int LOADING_TIME = 10;
     public static final int WAIT_FOR_DISPLAY_TIME = 3;
+
+    // path
+    public static final String FileSeparator = System.getProperty("file.separator");
+    public static final String USER_DIR = System.getProperty("user.dir");
+
 
     // Data
     public static final String INVALID_EMAIL = "duyduy@gmail.com";
