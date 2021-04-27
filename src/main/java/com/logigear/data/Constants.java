@@ -11,7 +11,7 @@ public class Constants {
     public static final String RAIL_WAY_BROWSER = "http://www.railway.somee.com";
 
     // Formatter
-    public static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("M/dd/uuuu");
+    public static final DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("M/d/uuuu");
 
     // Timeout variables
     public static final int PRECONDITION_INTERVAL = 5;
@@ -33,7 +33,7 @@ public class Constants {
     public static final String VALID_EMAIL = String.format("qa+%s@gmail.com", System.currentTimeMillis());
     public static final String PASSWORD = "1234abcde";
     public static final String ID = "1234abcd";
-    public static final String BOOK_DATE = LocalDate.now().plusDays(2).format(DATE_TIME_FORMATTER);
+    public static final String BOOK_DATE = LocalDate.now().plusDays(6).format(DATE_TIME_FORMATTER);
     public static final List<String> DEPART_LIST =
             Arrays.asList("Sài Gòn", "Phan Thiết", "Nha Trang", "Đà Nẵng", "Huế", "Quảng Ngãi");
     public static final List<String> ARRIVE_LIST =
