@@ -2,6 +2,7 @@ package com.logigear.pages;
 
 import com.logigear.control.common.imp.Button;
 import com.logigear.control.common.imp.Label;
+import com.logigear.data.Constants;
 import com.logigear.model.BookTicket;
 import com.logigear.pages.base.BasePage;
 
@@ -38,6 +39,7 @@ public class BookTicketPage extends BasePage {
     }
 
     private void selectArriveTo(String arriveTo) {
+        selectArriveTo.waitForElementClickable(Constants.SLEEP_TIME);
         selectArriveTo.scrollToView();
         selectArriveTo.click();
         selectOptionTextView(arriveTo);

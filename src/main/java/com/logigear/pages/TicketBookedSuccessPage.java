@@ -24,9 +24,11 @@ public class TicketBookedSuccessPage extends BasePage {
     }
 
     public boolean checkTicketInfoCorrect(BookTicket bookTicket) {
-        return departInfo.getText().equals(bookTicket.getDepartFrom()) &&
-                arriveInfo.getText().equals(bookTicket.getArriveAt()) &&
-                seatTypeInfo.getText().equals(bookTicket.getSeatType()) &&
-                departDateInfo.getText().equals(bookTicket.getDepartDate());
+        departDateInfo.scrollToView();
+        boolean result = departInfo.getText().equals(bookTicket.getDepartFrom());
+        result = result && arriveInfo.getText().equals(bookTicket.getArriveAt());
+        result = result && seatTypeInfo.getText().equals(bookTicket.getSeatType());
+        result = result && departDateInfo.getText().equals(bookTicket.getDepartDate());
+        return result;
     }
 }

@@ -18,15 +18,16 @@ public class RegisterPage extends BasePage {
     // Function
     public void registerNewAccount(String email, String password, String id) {
         emailInput.scrollToView();
-        emailInput.setText(email);
+        emailInput.enter(email);
         passwordInput.scrollToView();
-        passwordInput.setText(password);
+        passwordInput.enter(password);
         confirmPasswordInput.scrollToView();
-        confirmPasswordInput.setText(password);
+        confirmPasswordInput.enter(password);
         idInput.scrollToView();
-        idInput.setText(id);
+        idInput.enter(id);
         registerBtn.scrollToView();
         registerBtn.click();
+        registerBtn.waitForInvisibility();
     }
 
     public boolean checkRegisterErrorMessage(String message) {

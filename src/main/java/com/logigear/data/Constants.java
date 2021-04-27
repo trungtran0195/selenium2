@@ -30,8 +30,8 @@ public class Constants {
 
     // Data
     public static final String INVALID_EMAIL = "duyduy@gmail.com";
-    public static final String VALID_EMAIL = "trantrung0195@gmail.com";
-    public static final String PASSWORD = "1234abcd";
+    public static final String VALID_EMAIL = String.format("qa+%s@gmail.com", System.currentTimeMillis());
+    public static final String PASSWORD = "1234abcde";
     public static final String ID = "1234abcd";
     public static final String BOOK_DATE = LocalDate.now().plusDays(2).format(DATE_TIME_FORMATTER);
     public static final List<String> DEPART_LIST =
